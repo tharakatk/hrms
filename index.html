@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ======================== SEO META TAGS ======================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,12 +12,12 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://leanmo.com/">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://leanmo.com/">
     <meta property="og:title" content="lifeHRMS | The Complete Cloud HR Platform by Leanmo">
     <meta property="og:description" content="Streamline your entire HR workflow — payroll, attendance, leave, performance, and more. lifeHRMS is the all-in-one HRMS built for modern teams.">
-    <meta property="og:image" content="https://leanmo.com/img/og-image.jpg">
+    <meta property="og:image" content="https://leanmo.com/img/screen-attendance-hd.png">
     <meta property="og:site_name" content="lifeHRMS by Leanmo">
     <meta property="og:locale" content="en_US">
 
@@ -26,133 +25,38 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="lifeHRMS | Complete Cloud HRMS by Leanmo">
     <meta name="twitter:description" content="One platform for payroll, attendance, leave, performance, and employee management. Discover lifeHRMS.">
-    <meta name="twitter:image" content="https://leanmo.com/img/twitter-card.jpg">
+    <meta name="twitter:image" content="https://leanmo.com/img/screen-attendance-hd.png">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
 
-    <!-- Schema.org Structured Data (JSON-LD) — Organization -->
+    <!-- JSON-LD: Organization -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Leanmo Software (Pvt) Ltd",
-        "alternateName": "lifeHRMS",
-        "url": "https://leanmo.com",
-        "logo": "https://leanmo.com/img/logo.svg",
-        "description": "lifeHRMS is a comprehensive cloud HRMS platform offering payroll, attendance tracking, leave management, performance reviews, and employee self-service tools.",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "info@leanmo.com",
-            "contactType": "customer service",
-            "areaServed": "LK",
-            "availableLanguage": ["English", "Sinhala"]
-        },
-        "sameAs": []
-    }
+    {"@context":"https://schema.org","@type":"Organization","name":"Leanmo Software (Pvt) Ltd","alternateName":"lifeHRMS","url":"https://leanmo.com","logo":"https://leanmo.com/assets/favicon.svg","description":"lifeHRMS is a comprehensive cloud HRMS platform offering payroll, attendance tracking, leave management, performance reviews, and employee self-service tools.","contactPoint":{"@type":"ContactPoint","email":"info@leanmo.com","contactType":"customer service","areaServed":"LK","availableLanguage":["English","Sinhala"]}}
     </script>
 
-    <!-- Schema.org — SoftwareApplication -->
+    <!-- JSON-LD: SoftwareApplication -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "lifeHRMS",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web Browser",
-        "offers": [
-            {
-                "@type": "Offer",
-                "name": "Basic",
-                "priceCurrency": "USD",
-                "price": "3.00",
-                "priceValidUntil": "2027-12-31",
-                "url": "https://leanmo.com/#pricing"
-            },
-            {
-                "@type": "Offer",
-                "name": "Standard",
-                "priceCurrency": "USD",
-                "price": "6.00",
-                "priceValidUntil": "2027-12-31",
-                "url": "https://leanmo.com/#pricing"
-            },
-            {
-                "@type": "Offer",
-                "name": "Premium",
-                "priceCurrency": "USD",
-                "price": "0",
-                "url": "https://leanmo.com/#pricing"
-            }
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "reviewCount": "230",
-            "bestRating": "5"
-        },
-        "description": "All-in-one cloud HRMS with payroll, time tracking, leave management, performance reviews, and employee self-service."
-    }
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"lifeHRMS","applicationCategory":"BusinessApplication","operatingSystem":"Web Browser","offers":[{"@type":"Offer","name":"Basic","priceCurrency":"USD","price":"3.00","priceValidUntil":"2027-12-31"},{"@type":"Offer","name":"Standard","priceCurrency":"USD","price":"6.00","priceValidUntil":"2027-12-31"},{"@type":"Offer","name":"Premium","priceCurrency":"USD","price":"0"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"230","bestRating":"5"},"description":"All-in-one cloud HRMS with payroll, time tracking, leave management, performance reviews, and employee self-service.","screenshot":["https://leanmo.com/img/screen-attendance-hd.png","https://leanmo.com/img/screen-hr-metrics-hd.png","https://leanmo.com/img/screen-analytics-hd.png"]}
     </script>
 
-    <!-- Schema.org — FAQ -->
+    <!-- JSON-LD: FAQPage -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is lifeHRMS?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "lifeHRMS is a comprehensive cloud-based Human Resource Management System that handles payroll, attendance, leave management, performance reviews, recruitment, onboarding, and employee self-service in one unified platform."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How much does lifeHRMS cost?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "lifeHRMS offers three plans: Basic starting at $3/employee/month, Standard at $6/employee/month, and Premium with custom pricing for enterprise needs."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is lifeHRMS suitable for small businesses?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, lifeHRMS is designed for organizations of all sizes — from 10 to 10,000+ employees. The modular pricing ensures you only pay for what you need."
-                }
-            }
-        ]
-    }
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is lifeHRMS?","acceptedAnswer":{"@type":"Answer","text":"lifeHRMS is a comprehensive cloud-based Human Resource Management System that handles payroll, attendance, leave management, performance reviews, recruitment, onboarding, and employee self-service in one unified platform."}},{"@type":"Question","name":"How much does lifeHRMS cost?","acceptedAnswer":{"@type":"Answer","text":"lifeHRMS offers three plans: Basic starting at $3/employee/month, Standard at $6/employee/month, and Premium with custom pricing for enterprise needs."}},{"@type":"Question","name":"Is lifeHRMS suitable for small businesses?","acceptedAnswer":{"@type":"Answer","text":"Yes, lifeHRMS is designed for organizations of all sizes — from 10 to 10,000+ employees."}}]}
     </script>
 
-    <!-- Schema.org — BreadcrumbList -->
+    <!-- JSON-LD: BreadcrumbList -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://leanmo.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Features", "item": "https://leanmo.com/#features" },
-            { "@type": "ListItem", "position": 3, "name": "Pricing", "item": "https://leanmo.com/#pricing" }
-        ]
-    }
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://leanmo.com/"},{"@type":"ListItem","position":2,"name":"Features","item":"https://leanmo.com/#features"},{"@type":"ListItem","position":3,"name":"Pricing","item":"https://leanmo.com/#pricing"}]}
     </script>
 
-    <!-- Preconnect & Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/tailwind.config.js"></script>
-
-    <!-- Custom Styles -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -164,33 +68,26 @@
             <div class="flex items-center justify-between h-16 lg:h-[72px]">
                 <a href="#" class="flex items-center gap-2.5 no-underline" aria-label="lifeHRMS Home">
                     <div class="w-9 h-9 rounded-xl bg-brand-600 flex items-center justify-center">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z" fill="rgba(255,255,255,0.9)"/>
-                            <path d="M2 17l10 5 10-5" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round"/>
-                            <path d="M2 12l10 5 10-5" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" fill="rgba(255,255,255,0.9)"/><path d="M2 17l10 5 10-5" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round"/><path d="M2 12l10 5 10-5" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round"/></svg>
                     </div>
                     <span class="text-lg font-bold text-surface-900 tracking-tight">life<span class="text-brand-600">HRMS</span></span>
                 </a>
-
                 <div class="hidden lg:flex items-center gap-8">
                     <a href="#features" class="text-sm font-medium text-surface-600 hover:text-surface-900 transition-colors">Features</a>
+                    <a href="#product" class="text-sm font-medium text-surface-600 hover:text-surface-900 transition-colors">Product</a>
                     <a href="#solutions" class="text-sm font-medium text-surface-600 hover:text-surface-900 transition-colors">Solutions</a>
-                    <a href="#workflow" class="text-sm font-medium text-surface-600 hover:text-surface-900 transition-colors">How It Works</a>
                     <a href="#pricing" class="text-sm font-medium text-surface-600 hover:text-surface-900 transition-colors">Pricing</a>
                     <a href="#faq" class="text-sm font-medium text-surface-600 hover:text-surface-900 transition-colors">FAQ</a>
                     <a href="#contact" class="text-sm font-medium text-surface-600 hover:text-surface-900 transition-colors">Contact</a>
                 </div>
-
                 <div class="hidden lg:flex items-center gap-3">
                     <a href="#" class="text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors">Sign In</a>
                     <a href="#contact" class="btn-primary text-sm !py-2.5 !px-5 !rounded-lg">Start Free Trial</a>
                 </div>
-
                 <button id="mobileToggle" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
-                    <span class="block w-5 h-0.5 bg-surface-800 rounded transition-all"></span>
-                    <span class="block w-5 h-0.5 bg-surface-800 rounded transition-all"></span>
-                    <span class="block w-3.5 h-0.5 bg-surface-800 rounded transition-all"></span>
+                    <span class="block w-5 h-0.5 bg-surface-800 rounded"></span>
+                    <span class="block w-5 h-0.5 bg-surface-800 rounded"></span>
+                    <span class="block w-3.5 h-0.5 bg-surface-800 rounded"></span>
                 </button>
             </div>
         </div>
@@ -200,8 +97,8 @@
     <div id="mobileMenu" class="mobile-menu">
         <button id="mobileClose" class="absolute top-5 right-6 text-2xl text-surface-800" aria-label="Close menu">&times;</button>
         <a href="#features" class="text-xl font-semibold text-surface-900 mobile-link">Features</a>
+        <a href="#product" class="text-xl font-semibold text-surface-900 mobile-link">Product</a>
         <a href="#solutions" class="text-xl font-semibold text-surface-900 mobile-link">Solutions</a>
-        <a href="#workflow" class="text-xl font-semibold text-surface-900 mobile-link">How It Works</a>
         <a href="#pricing" class="text-xl font-semibold text-surface-900 mobile-link">Pricing</a>
         <a href="#faq" class="text-xl font-semibold text-surface-900 mobile-link">FAQ</a>
         <a href="#contact" class="text-xl font-semibold text-surface-900 mobile-link">Contact</a>
@@ -209,7 +106,7 @@
     </div>
 
 
-    <!-- ======================== HERO SECTION ======================== -->
+    <!-- ======================== HERO ======================== -->
     <header class="relative pt-32 pb-8 lg:pt-44 lg:pb-16 overflow-hidden" role="banner">
         <div class="absolute inset-0 bg-gradient-to-b from-brand-50/50 via-white to-white pointer-events-none"></div>
         <div class="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
@@ -235,48 +132,25 @@
                 <a href="#features" class="btn-secondary text-base">Explore Features</a>
             </div>
 
-            <!-- Hero device mockup -->
+            <!-- HERO: Real product screenshot -->
             <div class="mt-16 lg:mt-20 reveal reveal-delay-4 max-w-5xl mx-auto">
-                <div class="hero-device aspect-[16/10]">
-                    <div class="dash-mock h-full">
-                        <div class="dash-card">
-                            <div class="text-xs text-white/40 font-medium uppercase tracking-wider">Employees</div>
-                            <div class="text-2xl font-bold text-white mt-1">1,247</div>
-                            <div class="dash-bar bg-brand-400/40" style="width:70%"></div>
+                <div class="hero-device-frame">
+                    <div class="hero-device-toolbar">
+                        <div class="flex gap-1.5">
+                            <span class="w-3 h-3 rounded-full bg-[#ff5f57]"></span>
+                            <span class="w-3 h-3 rounded-full bg-[#febc2e]"></span>
+                            <span class="w-3 h-3 rounded-full bg-[#28c840]"></span>
                         </div>
-                        <div class="dash-card">
-                            <div class="text-xs text-white/40 font-medium uppercase tracking-wider">Attendance</div>
-                            <div class="text-2xl font-bold text-accent-400 mt-1">96.3%</div>
-                            <div class="dash-bar bg-accent-500/40" style="width:96%"></div>
-                        </div>
-                        <div class="dash-card">
-                            <div class="text-xs text-white/40 font-medium uppercase tracking-wider">Leave Requests</div>
-                            <div class="text-2xl font-bold text-white mt-1">18</div>
-                            <div class="dash-bar bg-yellow-400/40" style="width:45%"></div>
-                        </div>
-                        <div class="dash-card dash-card-lg">
-                            <div class="text-xs text-white/40 font-medium uppercase tracking-wider mb-3">Monthly Payroll Overview</div>
-                            <div class="flex items-end gap-2 h-16">
-                                <div class="flex-1 bg-brand-400/30 rounded-t-md" style="height:45%"></div>
-                                <div class="flex-1 bg-brand-400/30 rounded-t-md" style="height:60%"></div>
-                                <div class="flex-1 bg-brand-400/40 rounded-t-md" style="height:55%"></div>
-                                <div class="flex-1 bg-brand-400/40 rounded-t-md" style="height:75%"></div>
-                                <div class="flex-1 bg-brand-400/50 rounded-t-md" style="height:70%"></div>
-                                <div class="flex-1 bg-brand-400/50 rounded-t-md" style="height:85%"></div>
-                                <div class="flex-1 bg-accent-400/60 rounded-t-md" style="height:90%"></div>
-                                <div class="flex-1 bg-accent-400/40 rounded-t-md" style="height:78%"></div>
-                            </div>
-                        </div>
-                        <div class="dash-card">
-                            <div class="text-xs text-white/40 font-medium uppercase tracking-wider">Open Positions</div>
-                            <div class="text-2xl font-bold text-white mt-1">7</div>
-                            <div class="flex gap-1 mt-3">
-                                <div class="w-2 h-2 rounded-full bg-accent-400"></div>
-                                <div class="w-2 h-2 rounded-full bg-brand-400"></div>
-                                <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
-                            </div>
+                        <div class="hero-device-urlbar">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-surface-400"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                            <span class="text-xs text-surface-500">app.lifehrms.com/dashboard</span>
                         </div>
                     </div>
+                    <img src="./img/screen-hr-metrics-hd.png"
+                         alt="lifeHRMS Dashboard showing employee metrics, attendance tracking, department distribution charts, work anniversary reminders, and real-time HR analytics"
+                         class="w-full block"
+                         width="1440" height="900"
+                         loading="eager">
                 </div>
             </div>
         </div>
@@ -303,59 +177,37 @@
     <section id="features" class="py-20 lg:py-32" aria-labelledby="features-heading">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 lg:mb-24">
-                <h2 id="features-heading" class="section-headline text-surface-950 reveal">
-                    Everything your HR<br>team needs. <span class="gradient-text">Unified.</span>
-                </h2>
-                <p class="sub-headline text-surface-500 mt-4 reveal reveal-delay-1">
-                    From payroll to performance — a single platform that replaces scattered tools with elegant simplicity.
-                </p>
+                <h2 id="features-heading" class="section-headline text-surface-950 reveal">Everything your HR<br>team needs. <span class="gradient-text">Unified.</span></h2>
+                <p class="sub-headline text-surface-500 mt-4 reveal reveal-delay-1">From payroll to performance — a single platform that replaces scattered tools with elegant simplicity.</p>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <article class="feature-card reveal">
-                    <div class="feature-icon bg-brand-50 text-brand-600">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M8 7h8M8 11h5M8 15h8"/></svg>
-                    </div>
+                    <div class="feature-icon bg-brand-50 text-brand-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M8 7h8M8 11h5M8 15h8"/></svg></div>
                     <h3 class="text-lg font-semibold text-surface-900 mb-2">Payroll Management</h3>
                     <p class="text-surface-500 text-sm leading-relaxed">Define any salary structure with custom formulas. Generate payslips with a single click — weekly, biweekly, or monthly.</p>
                 </article>
-
                 <article class="feature-card reveal reveal-delay-1">
-                    <div class="feature-icon bg-accent-50 text-accent-700">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    </div>
+                    <div class="feature-icon bg-accent-50 text-accent-700"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
                     <h3 class="text-lg font-semibold text-surface-900 mb-2">Time & Attendance</h3>
                     <p class="text-surface-500 text-sm leading-relaxed">Automated clock-in/out with detailed records. Integrate biometric devices or use mobile check-ins from anywhere.</p>
                 </article>
-
                 <article class="feature-card reveal reveal-delay-2">
-                    <div class="feature-icon bg-purple-50 text-purple-600">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-                    </div>
+                    <div class="feature-icon bg-purple-50 text-purple-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
                     <h3 class="text-lg font-semibold text-surface-900 mb-2">Employee Self-Service</h3>
                     <p class="text-surface-500 text-sm leading-relaxed">Empower your team to apply for leave, access payslips, update profiles, and track goals — anytime, from any device.</p>
                 </article>
-
                 <article class="feature-card reveal">
-                    <div class="feature-icon bg-orange-50 text-orange-600">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
-                    </div>
+                    <div class="feature-icon bg-orange-50 text-orange-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
                     <h3 class="text-lg font-semibold text-surface-900 mb-2">Leave Management</h3>
                     <p class="text-surface-500 text-sm leading-relaxed">Customizable leave types — parental, disability, unpaid, and more. Automated approval workflows tailored to your org.</p>
                 </article>
-
                 <article class="feature-card reveal reveal-delay-1">
-                    <div class="feature-icon bg-rose-50 text-rose-600">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
+                    <div class="feature-icon bg-rose-50 text-rose-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
                     <h3 class="text-lg font-semibold text-surface-900 mb-2">Performance Management</h3>
                     <p class="text-surface-500 text-sm leading-relaxed">Set measurable goals, track OKRs, collect 360° feedback, and drive a culture of continuous improvement.</p>
                 </article>
-
                 <article class="feature-card reveal reveal-delay-2">
-                    <div class="feature-icon bg-cyan-50 text-cyan-600">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
-                    </div>
+                    <div class="feature-icon bg-cyan-50 text-cyan-600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
                     <h3 class="text-lg font-semibold text-surface-900 mb-2">Recruitment & Onboarding</h3>
                     <p class="text-surface-500 text-sm leading-relaxed">Post to job boards, screen applicants, schedule interviews, and convert hires into employees seamlessly.</p>
                 </article>
@@ -364,31 +216,104 @@
     </section>
 
 
-    <!-- ======================== SHOWCASE (Dark) ======================== -->
-    <section class="section-dark py-20 lg:py-32" aria-labelledby="showcase-heading">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-            <h2 id="showcase-heading" class="section-headline reveal">
-                Wherever. Whenever.<br>
-                <span class="gradient-text">Always available.</span>
-            </h2>
-            <p class="sub-headline max-w-2xl mx-auto mt-4 reveal reveal-delay-1" style="color:rgba(255,255,255,0.6)">
-                24/7/365 access to every report, every record, every insight — from any device on the planet.
-            </p>
+    <!-- ======================== PRODUCT SHOWCASE (Apple-style with real screenshots) ======================== -->
+    <section id="product" class="section-dark py-20 lg:py-32" aria-labelledby="product-heading">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 id="product-heading" class="section-headline reveal">
+                    See it in action.<br>
+                    <span class="gradient-text">Every detail, refined.</span>
+                </h2>
+                <p class="sub-headline max-w-2xl mx-auto mt-4 reveal reveal-delay-1" style="color:rgba(255,255,255,0.6)">
+                    Real dashboards. Real data. Real-time insights for your entire workforce.
+                </p>
+            </div>
 
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 reveal reveal-delay-2">
-                <div>
+            <!-- Screenshot Gallery -->
+            <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                <!-- Large: Attendance Dashboard -->
+                <div class="screenshot-card reveal">
+                    <div class="screenshot-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        Attendance Tracking
+                    </div>
+                    <img src="./img/screen-attendance-hd.png"
+                         alt="lifeHRMS Attendance Dashboard — monthly attendance chart with employee count, late arrivals, total attendances, messages panel, today's meetings, and task todo list"
+                         class="w-full rounded-xl"
+                         width="1440" height="900"
+                         loading="lazy">
+                </div>
+
+                <!-- Large: Analytics -->
+                <div class="screenshot-card reveal reveal-delay-1">
+                    <div class="screenshot-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                        Analytics & Reports
+                    </div>
+                    <img src="./img/screen-analytics-hd.png"
+                         alt="lifeHRMS Analytics Dashboard — half-year revenue margin chart, order metrics, user activity tracking, and custom responsive data table"
+                         class="w-full rounded-xl"
+                         width="1440" height="900"
+                         loading="lazy">
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Overhead Costs -->
+                <div class="screenshot-card reveal">
+                    <div class="screenshot-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                        Overhead & Costs
+                    </div>
+                    <img src="./img/screen-overhead-hd.png"
+                         alt="lifeHRMS Overhead Cost Dashboard — headcount cost tracking, overtime analysis, new hire cost, monthly absenteeism rate, and team timeline"
+                         class="w-full rounded-xl"
+                         width="1440" height="900"
+                         loading="lazy">
+                </div>
+
+                <!-- HR Metrics -->
+                <div class="screenshot-card reveal reveal-delay-1">
+                    <div class="screenshot-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                        HR Metrics
+                    </div>
+                    <img src="./img/screen-hr-metrics-hd.png"
+                         alt="lifeHRMS HR Metrics — employee count by department and cost center, work anniversary reminders, salary type distribution, gender ratio charts"
+                         class="w-full rounded-xl"
+                         width="1440" height="900"
+                         loading="lazy">
+                </div>
+
+                <!-- Attendance Detail -->
+                <div class="screenshot-card reveal reveal-delay-2">
+                    <div class="screenshot-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        Daily Overview
+                    </div>
+                    <img src="./img/screen-attendance-detail-hd.png"
+                         alt="lifeHRMS Daily Attendance Detail — man days, no-pay days, overtime hours, monthly attendance trends with detailed employee records"
+                         class="w-full rounded-xl"
+                         width="1440" height="900"
+                         loading="lazy">
+                </div>
+            </div>
+
+            <!-- Stats row -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-20 reveal">
+                <div class="text-center">
                     <div class="stat-number text-white">99.9%</div>
                     <div class="text-sm text-white/40 mt-2 font-medium">Uptime SLA</div>
                 </div>
-                <div>
+                <div class="text-center">
                     <div class="stat-number gradient-text">10k+</div>
                     <div class="text-sm text-white/40 mt-2 font-medium">Active Users</div>
                 </div>
-                <div>
+                <div class="text-center">
                     <div class="stat-number text-white">150+</div>
-                    <div class="text-sm text-white/40 mt-2 font-medium">Countries Served</div>
+                    <div class="text-sm text-white/40 mt-2 font-medium">Companies Served</div>
                 </div>
-                <div>
+                <div class="text-center">
                     <div class="stat-number gradient-text">4.7★</div>
                     <div class="text-sm text-white/40 mt-2 font-medium">Average Rating</div>
                 </div>
@@ -401,95 +326,77 @@
     <section id="solutions" class="py-20 lg:py-32 bg-surface-50" aria-labelledby="solutions-heading">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 id="solutions-heading" class="section-headline text-surface-950 reveal">
-                    Built for every team. <span class="gradient-text-dark">Every workflow.</span>
-                </h2>
+                <h2 id="solutions-heading" class="section-headline text-surface-950 reveal">Built for every team. <span class="gradient-text-dark">Every workflow.</span></h2>
             </div>
 
-            <!-- Solution 1: HR Management -->
+            <!-- Solution 1: Attendance -->
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
                 <div class="reveal">
-                    <span class="text-sm font-semibold text-brand-600 uppercase tracking-wider">HR Management</span>
-                    <h3 class="text-2xl lg:text-3xl font-bold text-surface-950 mt-3 mb-4 leading-tight">A single source of truth for your entire workforce</h3>
-                    <p class="text-surface-500 leading-relaxed mb-6">Create and manage a centralized, searchable employee directory — whether you have ten employees or ten thousand. Browse by department, expertise, or organizational chart.</p>
+                    <span class="text-sm font-semibold text-brand-600 uppercase tracking-wider">Attendance & Time</span>
+                    <h3 class="text-2xl lg:text-3xl font-bold text-surface-950 mt-3 mb-4 leading-tight">Track every minute, across every team</h3>
+                    <p class="text-surface-500 leading-relaxed mb-6">Monitor man days, no-pay days, overtime hours, and late arrivals in real-time. Monthly attendance charts give you instant visibility into workforce patterns.</p>
                     <ul class="check-list list-none">
-                        <li>Centralized employee database</li>
-                        <li>Dynamic organizational charts (Drag & Drop)</li>
-                        <li>Document management with version control</li>
-                        <li>Custom fields and data templates</li>
+                        <li>Real-time attendance monitoring</li>
+                        <li>Monthly/daily/annual view toggles</li>
+                        <li>Late arrival & early departure tracking</li>
+                        <li>Integrated messaging & meeting schedules</li>
                     </ul>
                 </div>
                 <div class="reveal reveal-delay-2">
-                    <div class="bg-white rounded-3xl border border-surface-100 p-8 shadow-lg shadow-surface-200/30">
-                        <div class="flex items-center gap-3 mb-6">
-                            <div class="w-10 h-10 rounded-xl bg-brand-100 flex items-center justify-center text-brand-600 text-sm font-bold">JD</div>
-                            <div>
-                                <div class="font-semibold text-surface-900 text-sm">Jane Doe</div>
-                                <div class="text-xs text-surface-400">Senior Product Manager</div>
-                            </div>
-                            <span class="ml-auto text-xs font-medium bg-accent-100 text-accent-800 px-3 py-1 rounded-full">Active</span>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4 text-sm">
-                            <div class="bg-surface-50 rounded-xl p-4"><div class="text-surface-400 text-xs">Department</div><div class="font-medium text-surface-900 mt-1">Product</div></div>
-                            <div class="bg-surface-50 rounded-xl p-4"><div class="text-surface-400 text-xs">Location</div><div class="font-medium text-surface-900 mt-1">Colombo, LK</div></div>
-                            <div class="bg-surface-50 rounded-xl p-4"><div class="text-surface-400 text-xs">Tenure</div><div class="font-medium text-surface-900 mt-1">3y 4m</div></div>
-                            <div class="bg-surface-50 rounded-xl p-4"><div class="text-surface-400 text-xs">Leave Balance</div><div class="font-medium text-accent-700 mt-1">14 days</div></div>
-                        </div>
+                    <div class="solution-screenshot-wrap">
+                        <img src="./img/dashboard-attendance.jpg"
+                             alt="lifeHRMS Attendance Dashboard with man days, no-pay tracking, monthly attendance charts, messages, meetings, and task management"
+                             class="w-full rounded-2xl"
+                             width="1280" height="800"
+                             loading="lazy">
                     </div>
                 </div>
             </div>
 
-            <!-- Solution 2: Payroll -->
+            <!-- Solution 2: Analytics -->
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-24">
                 <div class="order-2 lg:order-1 reveal reveal-delay-2">
-                    <div class="bg-white rounded-3xl border border-surface-100 p-8 shadow-lg shadow-surface-200/30">
-                        <div class="text-sm font-medium text-surface-400 mb-4">Payroll Summary — March 2026</div>
-                        <div class="space-y-3">
-                            <div class="flex justify-between items-center bg-surface-50 rounded-xl p-4"><span class="text-sm text-surface-600">Gross Payroll</span><span class="font-bold text-surface-900">$284,500</span></div>
-                            <div class="flex justify-between items-center bg-surface-50 rounded-xl p-4"><span class="text-sm text-surface-600">Deductions</span><span class="font-bold text-rose-600">-$42,675</span></div>
-                            <div class="flex justify-between items-center bg-brand-50 rounded-xl p-4 border border-brand-100"><span class="text-sm font-medium text-brand-700">Net Payroll</span><span class="font-bold text-brand-700 text-lg">$241,825</span></div>
-                        </div>
-                        <div class="mt-4 flex items-center gap-2">
-                            <div class="w-2 h-2 rounded-full bg-accent-500"></div>
-                            <span class="text-xs text-accent-700 font-medium">All payslips generated successfully</span>
-                        </div>
+                    <div class="solution-screenshot-wrap">
+                        <img src="./img/dashboard-analytics.jpg"
+                             alt="lifeHRMS Analytics Dashboard with revenue margin charts, order tracking, user activity data, and responsive project tables"
+                             class="w-full rounded-2xl"
+                             width="1280" height="800"
+                             loading="lazy">
                     </div>
                 </div>
                 <div class="order-1 lg:order-2 reveal">
-                    <span class="text-sm font-semibold text-accent-700 uppercase tracking-wider">Payroll</span>
-                    <h3 class="text-2xl lg:text-3xl font-bold text-surface-950 mt-3 mb-4 leading-tight">Payroll that runs itself — accurately, every time</h3>
-                    <p class="text-surface-500 leading-relaxed mb-6">Define complex salary structures with user-defined formulas. Calculate wages, withhold taxes, generate payslips — on any schedule you need. One click, done.</p>
-                    <ul class="check-list list-none">
-                        <li>Flexible salary structure builder</li>
-                        <li>Automatic tax calculations</li>
-                        <li>Bulk payslip generation</li>
-                        <li>Multi-currency & multi-country support</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Solution 3: Reporting -->
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                <div class="reveal">
-                    <span class="text-sm font-semibold text-purple-600 uppercase tracking-wider">Reporting</span>
+                    <span class="text-sm font-semibold text-accent-700 uppercase tracking-wider">Analytics & Reports</span>
                     <h3 class="text-2xl lg:text-3xl font-bold text-surface-950 mt-3 mb-4 leading-tight">Insights that drive smarter decisions</h3>
-                    <p class="text-surface-500 leading-relaxed mb-6">Generate variance reports, compliance reports, and complex analytics with zero development effort. Real-time dashboards your CEO, HR team, and managers will love.</p>
+                    <p class="text-surface-500 leading-relaxed mb-6">Generate variance reports, compliance reports, and complex analytics effortlessly. Real-time dashboards your CEO, HR team, and managers will love.</p>
                     <ul class="check-list list-none">
                         <li>Customizable dashboards per role</li>
                         <li>Pre-built standard HR reports</li>
                         <li>Export to PDF, Excel, and CSV</li>
-                        <li>Real-time workforce analytics</li>
+                        <li>User activity & data change tracking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Solution 3: HR Metrics -->
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="reveal">
+                    <span class="text-sm font-semibold text-purple-600 uppercase tracking-wider">HR Metrics</span>
+                    <h3 class="text-2xl lg:text-3xl font-bold text-surface-950 mt-3 mb-4 leading-tight">Your entire workforce, at a glance</h3>
+                    <p class="text-surface-500 leading-relaxed mb-6">From headcount by department to salary distribution, birthday reminders to work anniversaries — see everything that matters on one screen.</p>
+                    <ul class="check-list list-none">
+                        <li>Employee count by department & cost center</li>
+                        <li>Gender & salary type distribution</li>
+                        <li>Work anniversary & birthday reminders</li>
+                        <li>Draft, active, & pending approval tracking</li>
                     </ul>
                 </div>
                 <div class="reveal reveal-delay-2">
-                    <div class="bg-white rounded-3xl border border-surface-100 p-8 shadow-lg shadow-surface-200/30">
-                        <div class="text-sm font-medium text-surface-400 mb-4">Department Distribution</div>
-                        <div class="space-y-3">
-                            <div><div class="flex justify-between text-sm mb-1"><span class="text-surface-600">Engineering</span><span class="font-medium text-surface-900">38%</span></div><div class="h-2 bg-surface-100 rounded-full"><div class="h-2 rounded-full bg-brand-500" style="width:38%"></div></div></div>
-                            <div><div class="flex justify-between text-sm mb-1"><span class="text-surface-600">Sales & Marketing</span><span class="font-medium text-surface-900">24%</span></div><div class="h-2 bg-surface-100 rounded-full"><div class="h-2 rounded-full bg-accent-500" style="width:24%"></div></div></div>
-                            <div><div class="flex justify-between text-sm mb-1"><span class="text-surface-600">Operations</span><span class="font-medium text-surface-900">20%</span></div><div class="h-2 bg-surface-100 rounded-full"><div class="h-2 rounded-full bg-purple-500" style="width:20%"></div></div></div>
-                            <div><div class="flex justify-between text-sm mb-1"><span class="text-surface-600">Finance & HR</span><span class="font-medium text-surface-900">18%</span></div><div class="h-2 bg-surface-100 rounded-full"><div class="h-2 rounded-full bg-orange-400" style="width:18%"></div></div></div>
-                        </div>
+                    <div class="solution-screenshot-wrap">
+                        <img src="./img/dashboard-hr-metrics.jpg"
+                             alt="lifeHRMS HR Metrics showing employee distribution by cost center, department-wise counts, salary type groups, gender ratio, and work anniversary reminders"
+                             class="w-full rounded-2xl"
+                             width="1280" height="800"
+                             loading="lazy">
                     </div>
                 </div>
             </div>
@@ -550,50 +457,28 @@
                 <h2 id="pricing-heading" class="section-headline text-surface-950 reveal">Simple, transparent <span class="gradient-text-dark">pricing.</span></h2>
                 <p class="sub-headline text-surface-500 mt-4 reveal reveal-delay-1">No hidden fees. No long-term contracts. Start free and scale as you grow.</p>
             </div>
-
             <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <div class="pricing-card reveal">
                     <h3 class="text-lg font-bold text-surface-900 mb-1">Basic</h3>
                     <p class="text-sm text-surface-400 mb-6">Perfect for small teams getting started.</p>
                     <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-surface-950">$3</span><span class="text-surface-400 text-sm">/employee/month</span></div>
                     <a href="#contact" class="btn-secondary w-full justify-center text-sm !py-3">Get Started</a>
-                    <ul class="check-list list-none mt-8 space-y-0">
-                        <li>Employee Dashboards</li>
-                        <li>Employee Profiles</li>
-                        <li>Attendance Management</li>
-                        <li>Leave / Time Off Management</li>
-                    </ul>
+                    <ul class="check-list list-none mt-8 space-y-0"><li>Employee Dashboards</li><li>Employee Profiles</li><li>Attendance Management</li><li>Leave / Time Off Management</li></ul>
                 </div>
-
                 <div class="pricing-card featured reveal reveal-delay-1">
                     <div class="badge-popular">Most Popular</div>
                     <h3 class="text-lg font-bold text-surface-900 mb-1">Standard</h3>
                     <p class="text-sm text-surface-400 mb-6">For growing teams that need payroll & more.</p>
                     <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-surface-950">$6</span><span class="text-surface-400 text-sm">/employee/month</span></div>
                     <a href="#contact" class="btn-primary w-full justify-center text-sm !py-3">Start Free Trial</a>
-                    <ul class="check-list list-none mt-8 space-y-0">
-                        <li>Everything in Basic</li>
-                        <li>Time Management</li>
-                        <li>Payroll Management</li>
-                        <li>Employee Self-Service</li>
-                        <li>News & Announcements</li>
-                        <li>Management Reports</li>
-                    </ul>
+                    <ul class="check-list list-none mt-8 space-y-0"><li>Everything in Basic</li><li>Time Management</li><li>Payroll Management</li><li>Employee Self-Service</li><li>News & Announcements</li><li>Management Reports</li></ul>
                 </div>
-
                 <div class="pricing-card reveal reveal-delay-2">
                     <h3 class="text-lg font-bold text-surface-900 mb-1">Premium</h3>
                     <p class="text-sm text-surface-400 mb-6">Enterprise-grade with full HR suite.</p>
                     <div class="flex items-baseline gap-1 mb-6"><span class="text-4xl font-bold text-surface-950">Custom</span></div>
                     <a href="#contact" class="btn-accent w-full justify-center text-sm !py-3">Contact Sales</a>
-                    <ul class="check-list list-none mt-8 space-y-0">
-                        <li>Everything in Standard</li>
-                        <li>Onboarding & Offboarding</li>
-                        <li>Performance Appraisal</li>
-                        <li>Employee Recruitment</li>
-                        <li>Training & Development</li>
-                        <li>Custom Report Generator</li>
-                    </ul>
+                    <ul class="check-list list-none mt-8 space-y-0"><li>Everything in Standard</li><li>Onboarding & Offboarding</li><li>Performance Appraisal</li><li>Employee Recruitment</li><li>Training & Development</li><li>Custom Report Generator</li></ul>
                 </div>
             </div>
         </div>
@@ -603,34 +488,14 @@
     <!-- ======================== FAQ ======================== -->
     <section id="faq" class="py-20 lg:py-32 bg-surface-50" aria-labelledby="faq-heading">
         <div class="max-w-3xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 id="faq-heading" class="section-headline text-surface-950 reveal">Frequently asked questions</h2>
-            </div>
+            <div class="text-center mb-16"><h2 id="faq-heading" class="section-headline text-surface-950 reveal">Frequently asked questions</h2></div>
             <div class="space-y-0 reveal">
-                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">What is lifeHRMS?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div>
-                    <div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">lifeHRMS is a comprehensive cloud-based Human Resource Management System that handles payroll, attendance, leave management, performance reviews, recruitment, onboarding, and employee self-service — all in one unified platform by Leanmo Software.</p></div>
-                </div>
-                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">How long does it take to set up?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div>
-                    <div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">Most companies are fully operational within a day. Basic configuration takes under 15 minutes, and employee onboarding can be done via bulk CSV import or self-registration.</p></div>
-                </div>
-                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">Is there a free trial?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div>
-                    <div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">Yes! We offer a 14-day free trial on the Standard plan with no credit card required. Experience the full power of lifeHRMS before committing.</p></div>
-                </div>
-                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">Can lifeHRMS scale with my company?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div>
-                    <div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">Absolutely. lifeHRMS is designed for organizations from 10 to 10,000+ employees. Our modular architecture means you only pay for what you use, and you can add modules as your needs evolve.</p></div>
-                </div>
-                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">Is my data secure?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div>
-                    <div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">Security is our top priority. lifeHRMS uses bank-grade encryption, secure cloud infrastructure, role-based access controls, and regular security audits to keep your data safe.</p></div>
-                </div>
-                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
-                    <div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">Do you offer customer support?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div>
-                    <div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">Yes, we provide dedicated customer support via email, chat, and phone. Premium plan customers get a dedicated account manager and priority support SLA.</p></div>
-                </div>
+                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)"><div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">What is lifeHRMS?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div><div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">lifeHRMS is a comprehensive cloud-based Human Resource Management System that handles payroll, attendance, leave management, performance reviews, recruitment, onboarding, and employee self-service — all in one unified platform by Leanmo Software.</p></div></div>
+                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)"><div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">How long does it take to set up?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div><div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">Most companies are fully operational within a day. Basic configuration takes under 15 minutes, and employee onboarding can be done via bulk CSV import or self-registration.</p></div></div>
+                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)"><div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">Is there a free trial?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div><div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">Yes! We offer a 14-day free trial on the Standard plan with no credit card required. Experience the full power of lifeHRMS before committing.</p></div></div>
+                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)"><div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">Can lifeHRMS scale with my company?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div><div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">Absolutely. lifeHRMS is designed for organizations from 10 to 10,000+ employees. Our modular architecture means you only pay for what you use, and you can add modules as your needs evolve.</p></div></div>
+                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)"><div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">Is my data secure?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div><div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">Security is our top priority. lifeHRMS uses bank-grade encryption, secure cloud infrastructure, role-based access controls, and regular security audits to keep your data safe.</p></div></div>
+                <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)"><div class="flex items-center justify-between"><h3 class="text-base font-semibold text-surface-900 pr-4">Do you offer customer support?</h3><span class="faq-icon text-xl text-surface-400 flex-shrink-0">+</span></div><div class="faq-answer"><p class="text-sm text-surface-500 leading-relaxed pt-3">Yes, we provide dedicated customer support via email, chat, and phone. Premium plan customers get a dedicated account manager and priority support SLA.</p></div></div>
             </div>
         </div>
     </section>
@@ -658,20 +523,15 @@
                     <p class="sub-headline text-surface-500 mb-10">Our team is ready to help you find the perfect plan for your organization.</p>
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center flex-shrink-0">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3366ff" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            </div>
+                            <div class="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center flex-shrink-0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3366ff" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                             <div><div class="font-semibold text-surface-900 text-sm">Email</div><a href="mailto:info@leanmo.com" class="text-brand-600 text-sm hover:underline">info@leanmo.com</a></div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-accent-50 flex items-center justify-center flex-shrink-0">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#009545" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            </div>
+                            <div class="w-12 h-12 rounded-2xl bg-accent-50 flex items-center justify-center flex-shrink-0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#009545" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                             <div><div class="font-semibold text-surface-900 text-sm">Address</div><p class="text-surface-500 text-sm">Leanmo Software (Pvt) Ltd.<br>Sri Lanka</p></div>
                         </div>
                     </div>
                 </div>
-
                 <div class="reveal reveal-delay-2">
                     <form class="bg-surface-50 rounded-3xl p-8 lg:p-10" onsubmit="return handleFormSubmit(event)" aria-label="Contact form">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
@@ -695,41 +555,12 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
                 <div class="col-span-2 md:col-span-1">
-                    <a href="#" class="flex items-center gap-2.5 mb-4" aria-label="lifeHRMS Home">
-                        <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" fill="rgba(255,255,255,0.9)"/><path d="M2 17l10 5 10-5" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round"/><path d="M2 12l10 5 10-5" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round"/></svg>
-                        </div>
-                        <span class="text-base font-bold tracking-tight">life<span class="text-brand-400">HRMS</span></span>
-                    </a>
+                    <a href="#" class="flex items-center gap-2.5 mb-4" aria-label="lifeHRMS Home"><div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" fill="rgba(255,255,255,0.9)"/><path d="M2 17l10 5 10-5" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round"/><path d="M2 12l10 5 10-5" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round"/></svg></div><span class="text-base font-bold tracking-tight">life<span class="text-brand-400">HRMS</span></span></a>
                     <p class="text-sm text-white/40 leading-relaxed">The complete cloud HR platform by Leanmo Software (Pvt) Ltd.</p>
                 </div>
-                <div>
-                    <h4 class="text-sm font-semibold mb-4 text-white/60 uppercase tracking-wider">Product</h4>
-                    <ul class="space-y-3 text-sm text-white/40">
-                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
-                        <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Integrations</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-sm font-semibold mb-4 text-white/60 uppercase tracking-wider">Resources</h4>
-                    <ul class="space-y-3 text-sm text-white/40">
-                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">API Reference</a></li>
-                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-sm font-semibold mb-4 text-white/60 uppercase tracking-wider">Company</h4>
-                    <ul class="space-y-3 text-sm text-white/40">
-                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
-                    </ul>
-                </div>
+                <div><h4 class="text-sm font-semibold mb-4 text-white/60 uppercase tracking-wider">Product</h4><ul class="space-y-3 text-sm text-white/40"><li><a href="#features" class="hover:text-white transition-colors">Features</a></li><li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li><li><a href="#" class="hover:text-white transition-colors">Integrations</a></li><li><a href="#" class="hover:text-white transition-colors">Security</a></li></ul></div>
+                <div><h4 class="text-sm font-semibold mb-4 text-white/60 uppercase tracking-wider">Resources</h4><ul class="space-y-3 text-sm text-white/40"><li><a href="#" class="hover:text-white transition-colors">Documentation</a></li><li><a href="#" class="hover:text-white transition-colors">API Reference</a></li><li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li><li><a href="#" class="hover:text-white transition-colors">Blog</a></li></ul></div>
+                <div><h4 class="text-sm font-semibold mb-4 text-white/60 uppercase tracking-wider">Company</h4><ul class="space-y-3 text-sm text-white/40"><li><a href="#" class="hover:text-white transition-colors">About Us</a></li><li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li><li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li><li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li></ul></div>
             </div>
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
                 <p class="text-sm text-white/30">&copy; 2026 Leanmo Software (Pvt) Ltd. All rights reserved.</p>
@@ -738,7 +569,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="./js/main.js"></script>
 </body>
 </html>
