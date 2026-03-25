@@ -7,38 +7,71 @@
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 body { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; color: #1b1f2e; background: #ffffff; overflow-x: hidden; }
 
-/* ── Typography ────────────────────────────────────────────── */
 .hero-headline { font-size: clamp(3rem, 8vw, 7rem); font-weight: 700; line-height: 1.04; letter-spacing: -0.03em; }
 .section-headline { font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.025em; }
 .sub-headline { font-size: clamp(1.25rem, 2.5vw, 1.75rem); font-weight: 400; line-height: 1.4; letter-spacing: -0.01em; }
 
-/* ── Gradient Text ─────────────────────────────────────────── */
 .gradient-text { background: linear-gradient(135deg, #3366ff 0%, #00e66a 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 .gradient-text-dark { background: linear-gradient(135deg, #132de1 0%, #009545 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
-/* ── Navbar ─────────────────────────────────────────────────── */
 .nav-glass { backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); background: rgba(255,255,255,0.72); border-bottom: 1px solid rgba(0,0,0,0.06); }
 .nav-glass.scrolled { background: rgba(255,255,255,0.92); box-shadow: 0 1px 12px rgba(0,0,0,0.06); }
 
-/* ── Buttons ───────────────────────────────────────────────── */
 .btn-primary { background: #3366ff; color: #fff; padding: 14px 32px; border-radius: 12px; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; border: none; cursor: pointer; }
 .btn-primary:hover { background: #1a3ff5; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(51,102,255,0.25); }
-
 .btn-secondary { background: transparent; color: #3366ff; padding: 14px 32px; border-radius: 12px; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; border: 2px solid rgba(51,102,255,0.2); cursor: pointer; }
 .btn-secondary:hover { border-color: #3366ff; background: rgba(51,102,255,0.04); }
-
 .btn-accent { background: #00e66a; color: #003619; padding: 14px 32px; border-radius: 12px; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; border: none; cursor: pointer; }
 .btn-accent:hover { background: #00bf54; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,230,106,0.3); }
 
-/* ── Hero Device Frame (macOS-style browser chrome) ───────── */
+
+/* ================================================================
+   APPLE-STYLE CINEMATIC IMAGE PRESENTATION
+   perspective · ambient glow · floating frames · reflections
+   ================================================================ */
+
+/* ── HERO: Laptop-style floating frame with perspective tilt ── */
 .hero-device-frame {
+    position: relative;
+    perspective: 2000px;
+    padding-bottom: 24px; /* room for reflection */
+}
+
+.hero-device-inner {
     background: #1b1f2e;
     border-radius: 16px;
     overflow: hidden;
     box-shadow:
-        0 50px 100px -20px rgba(15,23,87,0.25),
-        0 30px 60px -10px rgba(0,0,0,0.2),
-        0 0 0 1px rgba(255,255,255,0.05) inset;
+        0 80px 160px -40px rgba(15,23,87,0.35),
+        0 40px 80px -20px rgba(0,0,0,0.2),
+        0 0 0 1px rgba(255,255,255,0.06) inset,
+        0 0 100px rgba(51,102,255,0.04);
+    transform: rotateX(2.5deg);
+    transform-origin: center bottom;
+    transition: transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94),
+                box-shadow 0.8s ease;
+}
+
+.hero-device-frame:hover .hero-device-inner {
+    transform: rotateX(0deg);
+    box-shadow:
+        0 60px 120px -30px rgba(15,23,87,0.3),
+        0 30px 60px -15px rgba(0,0,0,0.15),
+        0 0 0 1px rgba(255,255,255,0.08) inset,
+        0 0 120px rgba(51,102,255,0.06);
+}
+
+/* Soft reflection/glow underneath */
+.hero-device-frame::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    right: 8%;
+    height: 40px;
+    background: radial-gradient(ellipse at center, rgba(51,102,255,0.08) 0%, transparent 70%);
+    filter: blur(20px);
+    pointer-events: none;
 }
 
 .hero-device-toolbar {
@@ -46,7 +79,7 @@ body { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; color: #1b1
     align-items: center;
     gap: 16px;
     padding: 12px 16px;
-    background: #2d3142;
+    background: linear-gradient(180deg, #3a3e4e 0%, #2d3142 100%);
     border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
@@ -56,105 +89,222 @@ body { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; color: #1b1
     align-items: center;
     gap: 8px;
     background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.04);
     border-radius: 8px;
     padding: 6px 12px;
     max-width: 400px;
 }
 
-/* ── Screenshot Cards (Product Showcase — dark section) ───── */
+.hero-device-inner img {
+    display: block;
+    width: 100%;
+}
+
+
+/* ── PRODUCT GALLERY: Cinematic screenshot cards (dark bg) ──── */
+
+.screenshot-gallery {
+    perspective: 2400px;
+}
+
 .screenshot-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
+    position: relative;
     border-radius: 20px;
-    padding: 20px;
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+/* Ambient colored glow behind each card */
+.screenshot-card::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, rgba(51,102,255,0.15) 0%, rgba(0,230,106,0.08) 100%);
+    border-radius: 22px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    z-index: 0;
+}
+
+.screenshot-card:hover::before {
+    opacity: 1;
+}
+
+/* Reflection glow underneath */
+.screenshot-card::after {
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 12%;
+    right: 12%;
+    height: 48px;
+    background: radial-gradient(ellipse, rgba(51,102,255,0.1), transparent 70%);
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.screenshot-card:hover::after {
+    opacity: 1;
 }
 
 .screenshot-card:hover {
-    background: rgba(255,255,255,0.06);
-    border-color: rgba(255,255,255,0.12);
-    transform: translateY(-4px);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    transform: translateY(-10px) scale(1.015);
+}
+
+.screenshot-card-body {
+    position: relative;
+    z-index: 1;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: border-color 0.5s ease, background 0.5s ease;
+}
+
+.screenshot-card:hover .screenshot-card-body {
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.1);
 }
 
 .screenshot-label {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.35);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 12px;
+    letter-spacing: 0.1em;
+    padding: 20px 24px 0;
 }
 
-.screenshot-card img {
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.06);
+.screenshot-card-body img {
+    display: block;
+    width: 100%;
+    padding: 16px 16px 0;
+    /* Apple-style: screenshots "rise" from the card bottom with slight tilt */
+    transform: perspective(1400px) rotateX(2deg) translateY(8px) scale(0.98);
+    transform-origin: center bottom;
+    transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+    border-radius: 12px 12px 0 0;
 }
 
-/* ── Solution Screenshot Wrapper (light section) ──────────── */
+.screenshot-card:hover .screenshot-card-body img {
+    transform: perspective(1400px) rotateX(0deg) translateY(2px) scale(1);
+}
+
+/* Large featured cards get more dramatic effect */
+.screenshot-card-featured .screenshot-card-body img {
+    transform: perspective(1200px) rotateX(3deg) translateY(12px) scale(0.97);
+}
+
+.screenshot-card-featured:hover .screenshot-card-body img {
+    transform: perspective(1200px) rotateX(0.5deg) translateY(2px) scale(1);
+}
+
+
+/* ── SOLUTIONS: Floating screenshots (light sections) ───────── */
+
 .solution-screenshot-wrap {
+    position: relative;
+    perspective: 1600px;
+    padding-bottom: 20px; /* room for reflection */
+}
+
+.solution-screenshot-inner {
     background: #ffffff;
-    border: 1px solid rgba(0,0,0,0.08);
-    border-radius: 24px;
-    padding: 12px;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 20px;
+    padding: 8px;
     box-shadow:
-        0 20px 60px rgba(0,0,0,0.06),
-        0 4px 16px rgba(0,0,0,0.04);
-    transition: all 0.4s ease;
+        0 50px 100px -25px rgba(0,0,0,0.1),
+        0 25px 50px -12px rgba(0,0,0,0.04),
+        0 0 0 1px rgba(0,0,0,0.02);
+    transform: rotateY(-3deg) rotateX(2deg);
+    transform-origin: center center;
+    transition: all 0.7s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
-.solution-screenshot-wrap:hover {
+.solution-screenshot-wrap:hover .solution-screenshot-inner {
+    transform: rotateY(0deg) rotateX(0deg) translateY(-8px);
     box-shadow:
-        0 30px 80px rgba(19,45,225,0.08),
-        0 8px 24px rgba(0,0,0,0.06);
-    transform: translateY(-4px);
+        0 60px 120px -30px rgba(19,45,225,0.12),
+        0 30px 60px -15px rgba(0,0,0,0.06),
+        0 0 0 1px rgba(51,102,255,0.06);
 }
 
-.solution-screenshot-wrap img {
-    border-radius: 16px;
+/* Soft ambient glow beneath */
+.solution-screenshot-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    height: 24px;
+    background: radial-gradient(ellipse, rgba(51,102,255,0.06), transparent 70%);
+    filter: blur(14px);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
 }
 
-/* ── Feature Cards ─────────────────────────────────────────── */
+.solution-screenshot-wrap:hover::after {
+    opacity: 1;
+}
+
+.solution-screenshot-inner img {
+    display: block;
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* Alternate direction for right-side images */
+.solution-screenshot-wrap-alt .solution-screenshot-inner {
+    transform: rotateY(3deg) rotateX(2deg);
+}
+
+.solution-screenshot-wrap-alt:hover .solution-screenshot-inner {
+    transform: rotateY(0deg) rotateX(0deg) translateY(-8px);
+}
+
+
+/* ================================================================
+   END APPLE-STYLE IMAGE PRESENTATION
+   ================================================================ */
+
+
 .feature-card { background: #ffffff; border: 1px solid rgba(0,0,0,0.06); border-radius: 20px; padding: 2.5rem; transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94); }
 .feature-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(19,45,225,0.08), 0 8px 24px rgba(0,0,0,0.04); border-color: rgba(51,102,255,0.15); }
 .feature-icon { width: 56px; height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.5rem; }
 
-/* ── Stats ─────────────────────────────────────────────────── */
 .stat-number { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1; }
 
-/* ── Pricing ───────────────────────────────────────────────── */
 .pricing-card { background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 24px; padding: 3rem; transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94); position: relative; }
 .pricing-card.featured { border: 2px solid #3366ff; box-shadow: 0 24px 80px rgba(51,102,255,0.12); transform: scale(1.03); }
 .pricing-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.06); }
 .pricing-card.featured:hover { transform: scale(1.03) translateY(-4px); }
 .badge-popular { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, #3366ff, #00e66a); color: #fff; font-weight: 600; font-size: 0.8rem; padding: 6px 20px; border-radius: 20px; white-space: nowrap; }
 
-/* ── Checklist ─────────────────────────────────────────────── */
 .check-list li { display: flex; align-items: flex-start; gap: 12px; padding: 8px 0; font-size: 0.95rem; color: #464c5e; }
 .check-list li::before { content: '✓'; display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; background: #edfff5; color: #009545; border-radius: 50%; font-size: 0.7rem; font-weight: 700; }
 
-/* ── Testimonial ───────────────────────────────────────────── */
 .testimonial-card { background: linear-gradient(135deg, #f8f9fc 0%, #ffffff 100%); border: 1px solid rgba(0,0,0,0.06); border-radius: 24px; padding: 3rem; }
 
-/* ── FAQ ────────────────────────────────────────────────────── */
 .faq-item { border-bottom: 1px solid rgba(0,0,0,0.06); }
 .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; }
 .faq-answer.open { max-height: 300px; padding-bottom: 1.5rem; }
 .faq-icon { transition: transform 0.3s ease; }
 .faq-item.active .faq-icon { transform: rotate(45deg); }
 
-/* ── Dark Sections ─────────────────────────────────────────── */
 .section-dark { background: #0d1017; color: #ffffff; }
 .section-dark .sub-headline { color: rgba(255,255,255,0.7); }
 
-/* ── Mobile Menu ───────────────────────────────────────────── */
 .mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); z-index: 100; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
 .mobile-menu.open { display: flex; }
 
-/* ── Scroll Reveal ─────────────────────────────────────────── */
 .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 .reveal-delay-1 { transition-delay: 0.1s; }
@@ -162,9 +312,13 @@ body { font-family: 'DM Sans', system-ui, -apple-system, sans-serif; color: #1b1
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
-/* ── Responsive ────────────────────────────────────────────── */
 @media (max-width: 768px) {
     .pricing-card.featured { transform: scale(1); }
     .pricing-card.featured:hover { transform: translateY(-4px); }
     .hero-device-urlbar { display: none; }
+    .hero-device-inner { transform: rotateX(0deg) !important; }
+    .solution-screenshot-inner { transform: rotateY(0deg) rotateX(0deg) !important; }
+    .solution-screenshot-wrap-alt .solution-screenshot-inner { transform: rotateY(0deg) rotateX(0deg) !important; }
+    .screenshot-card-body img { transform: none !important; }
+    .screenshot-card:hover { transform: translateY(-4px) scale(1); }
 }
