@@ -1,48 +1,50 @@
-// Tailwind CSS Configuration for lifeHRMS
-// This file is loaded via <script> tag after the Tailwind CDN
+// Tailwind CSS Configuration — Leanmo Brand Colors
+// Derived from logo: Forest Green + Warm Orange + Clean Neutrals
 tailwind.config = {
     theme: {
         extend: {
             colors: {
-                /* Zoho-inspired deep blues + Stimulsoft accent greens */
+                /* Primary: Forest Green (from logo leaf) */
                 'brand': {
-                    50:  '#eef4ff',
-                    100: '#d9e6ff',
-                    200: '#bcd4ff',
-                    300: '#8eb8ff',
-                    400: '#5990ff',
-                    500: '#3366ff',
-                    600: '#1a3ff5',
-                    700: '#132de1',
-                    800: '#1626b6',
-                    900: '#18268f',
-                    950: '#0f1757',
+                    50:  '#f0faf1',
+                    100: '#dbf2dd',
+                    200: '#b9e5be',
+                    300: '#88d191',
+                    400: '#55b862',
+                    500: '#339940',
+                    600: '#2d8c3c',
+                    700: '#246f30',
+                    800: '#205829',
+                    900: '#1c4923',
+                    950: '#0a2810',
                 },
+                /* Accent: Warm Orange (from logo swirl) */
                 'accent': {
-                    50:  '#edfff5',
-                    100: '#d5ffe9',
-                    200: '#aeffd4',
-                    300: '#70ffb2',
-                    400: '#2bfd88',
-                    500: '#00e66a',
-                    600: '#00bf54',
-                    700: '#009545',
-                    800: '#067539',
-                    900: '#076031',
-                    950: '#003619',
+                    50:  '#fff8ed',
+                    100: '#ffeed4',
+                    200: '#ffd9a8',
+                    300: '#ffbe71',
+                    400: '#ff9a38',
+                    500: '#e8922d',
+                    600: '#d47615',
+                    700: '#b05a0f',
+                    800: '#8f4714',
+                    900: '#753c14',
+                    950: '#401d07',
                 },
+                /* Neutral: Warm grays for body/surface */
                 'surface': {
-                    50:  '#f8f9fc',
-                    100: '#f1f3f8',
-                    200: '#e8ebf2',
-                    300: '#d4d9e6',
-                    400: '#a9b1c6',
-                    500: '#7c869e',
-                    600: '#5c6479',
-                    700: '#464c5e',
-                    800: '#2d3142',
-                    900: '#1b1f2e',
-                    950: '#0d1017',
+                    50:  '#f9fafb',
+                    100: '#f3f4f6',
+                    200: '#e5e7eb',
+                    300: '#d1d5db',
+                    400: '#9ca3af',
+                    500: '#6b7280',
+                    600: '#4b5563',
+                    700: '#374151',
+                    800: '#1f2937',
+                    900: '#111827',
+                    950: '#0a0e14',
                 }
             },
             fontFamily: {
